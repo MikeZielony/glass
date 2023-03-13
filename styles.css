@@ -47,6 +47,15 @@ background: linear-gradient(to right top, rgba(0,0,0,0.75), rgba(0,0,0, 0.25));
     height: 75vh;
     animation: rotate 15s infinite linear;
 }
+
+.bg__img--logo {
+    left: 0;
+    top: 50%;
+    width: 70%;
+    opacity: .55;
+    transform: translate(-50%, -50%);
+
+}
 @keyframes slideDown {
     from {transform: translateY(-30vh);}
     to {transform: translateY(100vh);}
