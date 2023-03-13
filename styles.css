@@ -67,6 +67,27 @@ h1 {
 
 p {
     font-size: 20px;
+    font-weight: 400;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+    position: relative;
+}
+
+.link__border {
+    width: 0;
+    height: 3px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--blue);
+    background: linear-gradient(90deg, transparent, var(--blue));
+    transition: width 0.3s;
+}
+a:hover .link__border {
+    width: 100%;
 }
 @keyframes slideDown {
     from {transform: translateY(-30vh);}
