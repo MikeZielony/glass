@@ -31,14 +31,29 @@ background: linear-gradient(to right top, rgba(0,0,0,0.75), rgba(0,0,0, 0.25));
 }
 .bg__img {
     position: absolute;
+}
+
+.bg__img--button {
     width: 20vw;
     height: 20vh;
     top: 0;
     right: 60%;
     animation: slideDown 5s linear infinite;
 }
+
+.bg__img--dots {
+    top: 0;
+    left: 50%;
+    height: 75vh;
+    animation: rotate 15s infinite linear;
+}
 @keyframes slideDown {
     from {transform: translateY(-30vh);}
     to {transform: translateY(100vh);}
 
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
 }
