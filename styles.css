@@ -17,13 +17,16 @@ body {
     align-items: center;
     background:var(--blue);
     background: linear-gradient(to right top,var(--dark),var(--blue));
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
     overflow: hidden;
 }
 .container {
     width: 66%;
     height: 66%;
     background: rgba(0, 0, 0, 0.75);
-background: linear-gradient(to right top, rgba(0,0,0,0.75), rgba(0,0,0, 0.25));
+    background: linear-gradient(to right top, rgba(0,0,0,0.75), rgba(0,0,0, 0.25));
+    padding: 32px 92px;
     border-radius: 20px;
     position: relative;
     backdrop-filter: blur(4px);
@@ -38,23 +41,32 @@ background: linear-gradient(to right top, rgba(0,0,0,0.75), rgba(0,0,0, 0.25));
     height: 20vh;
     top: 0;
     right: 60%;
-    animation: slideDown 5s linear infinite;
+    animation: slideDown 25s linear infinite;
 }
 
 .bg__img--dots {
     top: 0;
-    left: 50%;
-    height: 75vh;
-    animation: rotate 15s infinite linear;
+    left: 70vw;
+    height: 95vh;
+    animation: rotate 45s infinite linear;
 }
 
 .bg__img--logo {
     left: 0;
     top: 50%;
     width: 50%;
-    opacity: .55;
+    opacity: .35;
     transform: translate(-50%, -50%);
 
+}
+
+h1 {
+    padding-bottom: 12px;
+    font-size: 48px;
+}
+
+p {
+    font-size: 20px;
 }
 @keyframes slideDown {
     from {transform: translateY(-30vh);}
