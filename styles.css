@@ -51,7 +51,7 @@ body {
     top: 0;
     right: 37vw;
     height: 30vh;
-    animation: slideDown 22s linear infinite;
+    animation: slideUp 22s linear infinite;
 }
 
 .bg__img--dots {
@@ -125,9 +125,9 @@ div.hebcal-container div div.hebcal-results .holiday { display: none }
 .CR {
     padding-top: 2%;
 }
-@keyframes slideDown {
-    from {transform: translateY(-30vh);}
-    to {transform: translateY(100vh);}
+@keyframes slideUp {
+    from {transform: translateY(100vh);}
+    to {transform: translateY(-30vh);}
 
 }
 
