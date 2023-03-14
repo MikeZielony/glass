@@ -33,15 +33,15 @@ body {
     border-radius: 20px
 }
 .container {
-
-    width: 76%;
-    height: 76%;
+    width: 80vw;
+    max-height: 80vh;
     background: rgba(0, 0, 0, 0.75);
     background: linear-gradient(to right top, rgba(0,0,0,0.75), rgba(0,0,0, 0.25));
     padding: 32px 92px;
     border-radius: 20px;
     position: relative;
     backdrop-filter: blur(4px);
+    overflow: auto;
 }
 .bg__img {
     position: absolute;
@@ -122,7 +122,7 @@ div.hebcal-container div div.hebcal-results .parashat { color: black; background
 div.hebcal-container div div.hebcal-results .holiday { display: none }
 
 .CR {
-    padding-top: 10%;
+    padding-top: 5%;
 }
 @keyframes slideDown {
     from {transform: translateY(-30vh);}

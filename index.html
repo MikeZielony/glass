@@ -24,7 +24,7 @@
     <div class="hebcal-container">
         <div id="hebcal-shabbat"></div>
         <script defer>
-            fetch('https://www.hebcal.com/shabbat?cfg=i2&geonameid=3094802&b=18&M=on&lg=a&tgt=_top')
+            fetch('https://www.hebcal.com/shabbat?cfg=i2&geonameid=3094802&b=18&M=on&lg=a&tgt=_top&maj=on&min=on&nx=on&mod=on&myomi=on&mf=on&i=off&ss=on')
                 .then(response => response.text())
                 .then(data => document.getElementById('hebcal-shabbat').innerHTML = data);
         </script>
@@ -32,6 +32,5 @@
     <br>
     <p class="CR">	&copy; by MikeZielony</p>
 </div>
-<p>	&copy;</p>
 </body>
 </html>
