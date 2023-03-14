@@ -11,17 +11,29 @@
 <body>
 <div class="bg">
 <!--    <img src="source/images/notes1.png" alt="button" class="bg__img bg__img&#45;&#45;button">-->
-    <img src="source/images/pesach.jpg" alt="dots" class="bg__img bg__img--dots">
+    <img src="source/images/333233887_927629911588918_8743224762999945522_n.png" alt="dots" class="bg__img bg__img--dots">
     <img src="source/images/david.png" alt="dots" class="bg__img bg__img--logo">
 </div>
+
+
 <div class="container">
-    <header>
-        <h1>Lorem Ipsum</h1>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget mattis leo, sit amet congue enim. Nunc enim magna, hendrerit id lobortis nec, aliquam eget nulla. Duis euismod velit convallis magna mollis, vitae suscipit justo convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis vehicula diam et porta ultrices. Proin fermentum varius nulla at convallis. Proin dapibus felis ac urna ornare gravida. <a href="https://www.facebook.com/gwzkrakow">
-            GWŻwK
-        </a>
-        </p>
-    </header>
+    <script src="https://www.hebcal.com/etc/hdate-he-v2.js">
+    </script>
+    <br>
+    <script src="https://www.hebcal.com/etc/hdate-en.js">
+    </script>
+    <br>
+    <div class="hebcal-container">
+        <div id="hebcal-shabbat"></div>
+        <script defer>
+            fetch('https://www.hebcal.com/shabbat?cfg=i2&geonameid=3094802&b=18&M=on&lg=a&tgt=_top')
+                .then(response => response.text())
+                .then(data => document.getElementById('hebcal-shabbat').innerHTML = data);
+        </script>
+    </div>
+    <br>
+    <p class="CR">	&copy; by MikeZielony</p>
 </div>
+<p>	&copy;</p>
 </body>
 </html>

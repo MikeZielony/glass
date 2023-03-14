@@ -8,7 +8,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+iframe {
+    width: 10vw;
+    height: 20vh;
+}
 body {
     width: 100vw;
     height: 100vh;
@@ -21,7 +24,16 @@ body {
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
 }
+.menu {
+
+    width: 76%;
+    height: 20%;
+    position: absolute;
+    padding: 32px 92px;
+    border-radius: 20px
+}
 .container {
+
     width: 76%;
     height: 76%;
     background: rgba(0, 0, 0, 0.75);
@@ -30,6 +42,7 @@ body {
     border-radius: 20px;
     position: relative;
     backdrop-filter: blur(4px);
+    font-size: 180%;
 }
 .bg__img {
     position: absolute;
@@ -89,6 +102,28 @@ a {
 }
 a:hover:after {
     width: 100%;
+}
+div.hebcal-container {
+    font-family: "Gill Sans MT","Gill Sans",GillSans,Arial,Helvetica,sans-serif;
+    font-size: medium;
+}
+div.hebcal-container div h3 {
+    font-family: Georgia,Palatino,"Times New Roman",Times,serif;
+}
+div.hebcal-container div ul.hebcal-results { list-style-type:none }
+div.hebcal-container div ul.hebcal-results li {
+    margin-bottom: 11px;
+    font-size: 190%;
+    font-weight: 200;
+    line-height: normal;
+}
+div.hebcal-container div div.hebcal-results .candles { color: red; font-size: large }
+div.hebcal-container div div.hebcal-results .havdalah { color: green }
+div.hebcal-container div div.hebcal-results .parashat { color: black; background: #ff9 }
+div.hebcal-container div div.hebcal-results .holiday { display: none }
+
+.CR {
+    padding-top: 10%;
 }
 @keyframes slideDown {
     from {transform: translateY(-30vh);}
